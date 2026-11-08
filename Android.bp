@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: Apache-2.0
+// Host tool used by the sm8450 WFD prebuilt generation rules.
+cc_prebuilt_binary_host {
+    name: "diting_patchelf_0_18",
+    srcs: ["linux-x86/bin/patchelf-0_18"],
+    strip: {
+        none: true,
+    },
+}
